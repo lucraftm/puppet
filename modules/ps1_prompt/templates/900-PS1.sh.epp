@@ -1,0 +1,14 @@
+# Puppet Managed File #
+
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# If root set end of prompt to #, else set to $
+if [ `id -u` -eq 0 ] ; then
+   TAG='#'
+else
+   TAG='$'
+fi
+
+# - Set users command prompt to [ username@hostname - PWD ]
+export PS1='\[[<%= $ps1_prompt::config::divider_colour %>m\][\[[<%= $ps1_prompt::config::user_colour %>m\] $(whoami)\[[<%= $ps1_prompt::config::divider_colour %>m\]@\[[<%= $ps1_prompt::config::hostname_colour %>m\]$(hostname -s) \[[<%= $ps1_prompt::config::divider_colour %>m\]-\[[<%= $ps1_prompt::config::pwd_colour %>m\] ${PWD}\[[0;<%= $ps1_prompt::config::divider_colour %>m\] ] $TAG \[[0m\]'

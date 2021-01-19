@@ -1,0 +1,10 @@
+---
+misc_packages::packages:
+  - epel-release
+  - redhat-lsb-core
+  - vim
+  - mlocate
+  - sysstat
+  - bash-completion
+  - tree
+  - git
