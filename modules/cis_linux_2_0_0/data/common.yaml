@@ -1,1 +1,8 @@
---- {}
+---
+cis_linux_2_0_0::disable_cramfs_1_1_1_1::apply_cis_control: true
+cis_linux_2_0_0::disable_freevxfs_1_1_1_2::apply_cis_control: true
+cis_linux_2_0_0::disable_jffs2_1_1_1_3::apply_cis_control: true
+cis_linux_2_0_0::disable_hfs_1_1_1_4::apply_cis_control: true
+cis_linux_2_0_0::disable_hfsplus_1_1_1_5::apply_cis_control: true
+cis_linux_2_0_0::disable_squashfs_1_1_1_6::apply_cis_control: true
+cis_linux_2_0_0::disable_udf_1_1_1_7::apply_cis_control: true

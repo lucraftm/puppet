@@ -25,9 +25,8 @@ File { backup => false }
 # specified in the console for that node.
 
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
+  include misc_packages
+  include ps1_prompt
 }
 
 node puppet.lucraft.local {
@@ -38,4 +37,5 @@ node puppet.lucraft.local {
 node dev01.lucraft.local {
   include misc_packages
   include ps1_prompt
+  include cis_linux_2_0_0
 }

@@ -23,39 +23,11 @@
 #
 # @example
 #   include cis_linux_2_0_0::disable_cramfs_1_1_1_1
-class cis_linux_2_0_0::disable_cramfs_1_1_1_1 {
-
-  # Ensure /etc/modprobe.d directory exists
-  file { '/etc/modprobe.d':
-    ensure => directory,
-    owner  => 'root',
-    group  => 'root',
-    mode   => '0755',
+class cis_linux_2_0_0::disable_cramfs_1_1_1_1 (
+  Boolean $apply_cis_control = lookup('cis_linux_2_0_0::disable_cramfs_1_1_1_1::apply_cis_control', Boolean)
+) {
+  if $apply_cis_control {
+    kmod::install { 'cramfs': command => '/bin/true' }
+    kmod::load    { 'cramfs': ensure  => absent       }
   }
-   
-  file { '/etc/modprobe.d/cramfs.conf':
-    ensure => present,
-    owner  => 'root',
-    group  => 'root',
-    mode   => '0644',
-    source => 'puppet:///modules/cis_linux_2_0_0/disable_cramfs_1_1_1_1.cramfs.conf',
-
-
-# Added in case, for whatever reason, /etc/profile.d does not exist
-  file { '/etc/profile.d':
-    ensure => directory,
-    owner  => 'root',
-    group  => 'root',
-    mode   => '0755',
-  }
-
-  # Create the profile script from epp template
-  file { '/etc/profile.d/900-PS1.sh':
-    ensure  => present,
-    content => epp('ps1_prompt/900-PS1.sh.epp'),
-    owner  => 'root',
-    group  => 'root',
-    mode   => '0644',
-  } 
-
 }
