@@ -13,4 +13,5 @@ class cis_linux_2_0_0 {
   include cis_linux_2_0_0::disable_hfsplus_1_1_1_5
   include cis_linux_2_0_0::disable_squashfs_1_1_1_6
   include cis_linux_2_0_0::disable_udf_1_1_1_7
+  include cis_linux_2_0_0::disable_automounting_1_1_22
 }
