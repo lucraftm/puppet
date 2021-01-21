@@ -7,3 +7,4 @@ cis_linux_2_0_0::disable_hfsplus_1_1_1_5::apply_cis_control: true
 cis_linux_2_0_0::disable_squashfs_1_1_1_6::apply_cis_control: true
 cis_linux_2_0_0::disable_udf_1_1_1_7::apply_cis_control: true
 cis_linux_2_0_0::disable_automounting_1_1_22::apply_cis_control: true
+cis_linux_2_0_0::disable_usb_storage_1_1_23::apply_cis_control: true
