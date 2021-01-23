@@ -15,4 +15,5 @@ class cis_linux_2_0_0 {
   include cis_linux_2_0_0::disable_udf_1_1_1_7
   include cis_linux_2_0_0::disable_automounting_1_1_22
   include cis_linux_2_0_0::disable_usb_storage_1_1_23
+  include cis_linux_2_0_0::install_aide_1_3_1
 }
