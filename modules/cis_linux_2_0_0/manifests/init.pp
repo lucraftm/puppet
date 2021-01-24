@@ -16,4 +16,5 @@ class cis_linux_2_0_0 {
   include cis_linux_2_0_0::disable_automounting_1_1_22
   include cis_linux_2_0_0::disable_usb_storage_1_1_23
   include cis_linux_2_0_0::install_aide_1_3_1
+  include cis_linux_2_0_0::aide_integrity_check_1_3_2
 }
