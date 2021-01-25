@@ -24,4 +24,5 @@ class cis_linux_2_0_0 {
   include cis_linux_2_0_0::motd_config_1_7_1_1
   include cis_linux_2_0_0::login_banner_config_1_7_1_2
   include cis_linux_2_0_0::remote_login_banner_config_1_7_1_3
+  include cis_linux_2_0_0::disable_xinetd_2_1_10
 }

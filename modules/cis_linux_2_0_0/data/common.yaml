@@ -14,3 +14,4 @@ cis_linux_2_0_0::disable_prelink_1_5_4::apply_cis_control: true
 cis_linux_2_0_0::motd_config_1_7_1_1::apply_cis_control: true
 cis_linux_2_0_0::login_banner_config_1_7_1_2::apply_cis_control: true
 cis_linux_2_0_0::remote_login_banner_config_1_7_1_3::apply_cis_control: true
+cis_linux_2_0_0::disable_xinetd_2_1_10::apply_cis_control: true
