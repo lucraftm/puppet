@@ -10,3 +10,4 @@ cis_linux_2_0_0::disable_automounting_1_1_22::apply_cis_control: true
 cis_linux_2_0_0::disable_usb_storage_1_1_23::apply_cis_control: true
 cis_linux_2_0_0::restrict_core_dumps_1_5_1::apply_cis_control: true
 cis_linux_2_0_0::enable_aslr_1_5_3::apply_cis_control: true
+cis_linux_2_0_0::disable_prelink_1_5_4::apply_cis_control: true
