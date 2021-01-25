@@ -22,4 +22,5 @@ class cis_linux_2_0_0 {
   include cis_linux_2_0_0::disable_prelink_1_5_4
   include cis_linux_2_0_0::ensure_selinux_installed_1_6_1_1
   include cis_linux_2_0_0::motd_config_1_7_1_1
+  include cis_linux_2_0_0::login_banner_config_1_7_1_2
 }
